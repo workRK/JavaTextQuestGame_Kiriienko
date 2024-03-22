@@ -1,0 +1,294 @@
+@import "./reset.css";
+@import url(https://fonts.googleapis.com/css?family=Oswald:regular,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,700);
+
+body {
+    background-color: #131313;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1920px;
+    height: 100vh;
+    background-image: url(../images/hero_bg.png);
+    background-size: cover;
+}
+
+.start-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-title {
+    font-family: "Oswald", sans-serif;
+    font-size: 128px;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 64px;
+}
+
+.start-block_text-block {
+    max-width: 1400px;
+    border: 1px solid #0F6292;
+    border-radius: 20px;
+    padding: 64px;
+    margin-bottom: 64px;
+}
+
+.start-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 40px 16px 40px;
+    border: 1px solid rgb(56, 235, 39);
+    border-radius: 8px;
+    background: rgb(34, 175, 21);
+    margin-bottom: 80px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.start-button:hover {
+    background-color: #31E420;
+    font-size: 26px;
+}
+
+/* ____________________________________________________________________________________________ */
+
+.main-character {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1920px;
+    height: 100vh;
+}
+
+.character-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 688px;
+    max-height: 1034px;
+    padding: 24px;
+    border: 2px solid rgb(2, 239, 255);
+    border-radius: 20px;
+    background: rgb(31, 98, 103, .1);
+}
+.character-image {
+    width: 442px;
+    height: 442px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid rgb(92, 154, 22);
+    border-radius: 20px;
+    background: url(../images/character.png);
+}
+
+.character-text-block {
+    margin-bottom: 16px;
+}
+.character-title {
+    margin-bottom: 8px;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 140%;
+}
+.character-text-paragraf {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+}
+.character-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+    padding: 16px 32px 16px 32px;
+    border: 1px solid rgb(56, 235, 39);
+    border-radius: 8px;
+    background: rgb(34, 175, 21);
+}
+.btn-text-character {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+/* ____________________________________________________________________________________________ */
+
+.main-question {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1920px;
+    height: 100vh;
+}
+
+.question-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1370px;
+    padding: 32px;
+    box-sizing: border-box;
+    border: 3px solid transparent;
+    animation: borderGlow 3s linear infinite;
+    border-radius: 20px;
+    background-image: url(../images/question_bg.png);
+}
+
+@keyframes borderGlow {
+    0% {
+        border-color: #14d31a; /* Початковий колір */
+    }
+    25% {
+        border-color: #18dbe2; /* Початковий колір */
+    }
+    50% {
+        border-color: #a92bc9; /* Колір на середині анімації */
+    }
+    100% {
+        border-color: #4CAF50; /* Кінцевий колір */
+    }
+}
+
+.question-title {
+    width: 1306px;
+    font-family: "Oswald", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+hr {
+    width: 1306px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    border: 1px solid rgb(170, 228, 222);
+}
+
+.answer-button__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.answer-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 32px 16px 32px;
+    box-sizing: border-box;
+    border: 1px solid rgb(186, 93, 201);
+    border-radius: 8px;
+    background: rgb(116, 4, 134);
+}
+
+.answer-btn-text {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.counter-title {
+    margin-top: 122px;
+    font-size: 24px;
+    font-weight: 300;
+    color: rgb(91, 91, 91);
+}
+
+.progress-container {
+    width: 1370px;
+    height: 50px;
+    margin-top: 8px;
+    box-sizing: border-box;
+    border: 1px solid rgb(50, 71, 69);
+    border-radius: 24px;
+    background: rgb(26, 26, 26);
+}
+
+.progress-bar {
+    height: 50px;
+    border-radius: 24px;
+    box-shadow: inset 0px -2px 4px 0px rgba(0, 0, 0, 0.25), inset 0px 2px 4px 0px rgba(255, 255, 255, 0.25);
+    background: rgb(174, 231, 224);
+    transition: width 0.5s ease-in-out; /* Додаємо анімацію */
+}
+
+
+/* ____________________________________________________________________________________________ */
+
+.main-wrong {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1920px;
+    height: 100vh;
+}
+
+.wrong-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    max-width: 1250px;
+    padding: 32px;
+    box-sizing: border-box;
+    border: 1px solid rgb(227, 27, 27);
+    border-radius: 20px;
+    background-image: url(../images/wrong_bg.png);
+}
+
+.wrong-title {
+    font-family: "Oswald", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.restart-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 64px;
+    padding: 16px 40px 16px 40px;
+    border: 1px solid rgb(232, 65, 28);
+    border-radius: 8px;
+    background: rgb(169, 43, 15);
+}
+
+.btn-text {
+    font-size: 24px;
+    font-weight: 700;
+}
